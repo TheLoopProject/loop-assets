@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "assets",
+  "version": "${version}",
+  "name": "Loop Assets",
+  "description": "A simple mod for legacy Minecraft which fix the issues related to assets in them",
+  "authors": [
+    "Blurryface",
+    "WorldWidePixel"
+  ],
+  "contact": {
+    "homepage": "https://loopmc.org/",
+    "sources": "https://github.com/TheLoopProject/loop-assets"
+  },
+  "license": "Apache 2.0",
+  "icon": "assets/assets/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "init": [
+      "org.loopmc.assets.Assets"
+    ]
+  },
+  "mixins": [
+    "assets.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": "1.5.2",
+    "osl-entrypoints": ">=0.4.0"
+  }
+}
